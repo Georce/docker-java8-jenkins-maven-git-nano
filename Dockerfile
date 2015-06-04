@@ -1,9 +1,8 @@
-# Ubuntu 14.04 LTS
-# Oracle Java 1.8.0_11 64 bit
+# Ubuntu 14.04.2 LTS
+# Oracle Java 1.7 64 bit
 # Maven 3.2.2
-# Jenkins 1.574
+# Jenkins 1.609.1
 # git 1.9.1
-# Nano 2.2.6-1ubuntu1
 
 # extend the most recent long term support Ubuntu version
 FROM index.alauda.cn/library/ubuntu:14.04.2
@@ -17,7 +16,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update 
 
 # install wget
-RUN apt-get install -y wget
+RUN apt-get install -y wget curl
 
 # get maven 3.2.2
 RUN wget --no-verbose -O /tmp/apache-maven-3.2.2.tar.gz http://archive.apache.org/dist/maven/maven-3/3.2.2/binaries/apache-maven-3.2.2-bin.tar.gz
@@ -85,5 +84,4 @@ RUN npm install -g grunt-cli
 ENTRYPOINT ["java", "-jar", "/opt/jenkins.war"]
 EXPOSE 8080
 
-CMD ["curl -XPUT http://$ETCD_HOST:4001/v2/keys/skydns/local/$DOMAIN/"`hostname -s`" \
--d value='{"host":"'`ip a | grep "scope global eth0" | grep -o '\([0-9]\{1,3\}\.\)\{3\}[0-9]\{1,3\}'`'"}'"]
+CMD [""]
