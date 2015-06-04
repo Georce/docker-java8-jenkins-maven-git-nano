@@ -85,6 +85,7 @@ RUN npm install -g grunt-cli
 ENTRYPOINT ["java", "-jar", "/opt/jenkins.war"]
 EXPOSE 8080
 
-CMD [""]
+CMD ["curl -XPUT http://$ETCD_HOST:4001/v2/keys/skydns/local/$DOMAIN/"`hostname -s`" \
+-d value='{"host":"'`ip a | grep "scope global eth0" | grep -o '\([0-9]\{1,3\}\.\)\{3\}[0-9]\{1,3\}'`'"}'"]
 
 
