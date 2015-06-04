@@ -6,9 +6,9 @@
 # Nano 2.2.6-1ubuntu1
 
 # extend the most recent long term support Ubuntu version
-FROM ubuntu:14.04
+FROM index.alauda.cn/library/ubuntu:14.04.2
 
-MAINTAINER Stephen L. Reed (http://texai.org, stephenreed@yahoo.com)
+MAINTAINER Stephen L. Reed (http://texai.org, stephenreed@yahoo.com) && Georce
 
 # this is a non-interactive automated build - avoid some warning messages
 ENV DEBIAN_FRONTEND noninteractive
@@ -36,15 +36,15 @@ ENV MAVEN_HOME /opt/maven
 RUN apt-get install -y git
 
 # install nano
-RUN apt-get install -y nano
+RUN apt-get install -y vim
 
 # remove download archive files
 RUN apt-get clean
 
 # set shell variables for java installation
-ENV java_version 1.8.0_11
-ENV filename jdk-8u11-linux-x64.tar.gz
-ENV downloadlink http://download.oracle.com/otn-pub/java/jdk/8u11-b12/$filename
+ENV java_version 1.7.0_79
+ENV filename jdk-7u79-linux-x64.tar.gz
+ENV downloadlink http://download.oracle.com/otn-pub/java/jdk/7u79-b15/$filename
 
 # download java, accepting the license agreement
 RUN wget --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" -O /tmp/$filename $downloadlink 
@@ -58,7 +58,7 @@ ENV PATH $JAVA_HOME/bin:$PATH
 RUN update-alternatives --install /usr/bin/java java $JAVA_HOME/bin/java 20000 && update-alternatives --install /usr/bin/javac javac $JAVA_HOME/bin/javac 20000
 
 # copy jenkins war file to the container
-ADD http://mirrors.jenkins-ci.org/war/1.574/jenkins.war /opt/jenkins.war
+ADD http://mirrors.jenkins-ci.org/war/1.609/jenkins.war /opt/jenkins.war
 RUN chmod 644 /opt/jenkins.war
 ENV JENKINS_HOME /jenkins
 
