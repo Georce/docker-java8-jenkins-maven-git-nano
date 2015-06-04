@@ -9,6 +9,8 @@ FROM index.alauda.cn/library/ubuntu:14.04.2
 
 MAINTAINER Stephen L. Reed (http://texai.org, stephenreed@yahoo.com) && Georce
 
+RUN \cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
 # this is a non-interactive automated build - avoid some warning messages
 ENV DEBIAN_FRONTEND noninteractive
 
