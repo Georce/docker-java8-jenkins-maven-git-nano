@@ -1,6 +1,6 @@
 # Ubuntu 14.04.2 LTS
 # Oracle Java 1.7 64 bit
-# Maven 3.2.2
+# Maven 3.3.3
 # Jenkins 1.609.1
 # git 1.9.1
 
