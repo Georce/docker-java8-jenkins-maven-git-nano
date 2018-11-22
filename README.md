@@ -18,3 +18,4 @@ To start Jenkins from the container's command prompt . . .
 You can configure Jenkins continuous integration jobs at http://127.0.0.1:8080 .  The Jenkins GitHub plugin needs to be installed by you if you use GitHub.
 
 More information on Jenkins state persistence can be found at https://registry.hub.docker.com/u/aespinosa/jenkins/ .
+Update readme.md
