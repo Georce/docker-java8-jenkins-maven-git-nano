@@ -4,3 +4,95 @@ Jenkins.io
 .travis.ynl
 codecov.ynl
 appveyor.yml
+
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @oscarg933 Sign out
+We are having a problem billing your account. Please enter a new payment method or check with your payment provider for details on why the transaction failed. If you don’t need access to your private repositories, you can downgrade to the Free plan in your Billing settings.
+You can always contact support with any questions.
+1
+0 62 Georce/jenkins6
+forked from TexaiCognitiveArchitecture/docker-java8-jenkins-maven-git-nano
+ Code  Pull requests 1  Projects 0  Wiki  Insights
+Veneno.iot #1
+ Open	oscarg933 wants to merge 7 commits into Georce:master from oscarg933:master
++90 −47 
+ Conversation 0   Commits 7   Checks 0   Files changed 7
+Conversation
+Reviewers
+No reviews
+Assignees
+No one assigned
+Labels
+None yet
+Projects
+None yet
+Milestone
+No milestone
+Notifications
+You’re receiving notifications because you authored the thread.
+2 participants
+@oscarg933
+@StephenLReed
+  Allow edits from maintainers.
+ @oscarg933
+ 
+oscarg933 commented just now
+No description provided.
+
+StephenLReed and others added some commits on Dec 15, 2017
+ @StephenLReed
+Upgraded to OpenJDK 8.
+f95c00f
+ @oscarg933
+Create Veneno.iot
+7474983
+ @oscarg933
+Set theme jekyll-theme-architect
+45049ee
+ @oscarg933
+Set theme jekyll-theme-architect
+c310d53
+ @oscarg933
+Update issue templates  …
+ea3ae5a
+ @oscarg933
+Update Veneno.iot
+ee964ca
+ @oscarg933
+Update README.md
+9c55f8a
+Merge state
+Add more commits by pushing to the master branch on oscarg933/docker-java8-jenkins-maven-git-nano.
+
+This branch has no conflicts with the base branch
+Only those with write access to this repository can merge pull requests.
+@oscarg933
+   
+ 
+ 
+ 
+Leave a comment
+Attach files by dragging & dropping, selecting them, or pasting from the clipboard.
+
+ Styling with Markdown is supported
+ ProTip! Add comments to specific lines under Files changed.
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Press h to open a hovercard with more details.
